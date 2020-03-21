@@ -11,7 +11,7 @@ timezone: Asia/Shanghai
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: https://xinyzm.github.io
+url: http://www.xinyzm.top
 root: /
 permalink: :title/
 permalink_defaults:
@@ -143,7 +143,7 @@ visitor:
 # Analytics settings
 ## Check out /themes/snail/layout/_partial/footer.ejs
 # Baidu Analytics
-ba_track_id: 9eae1c856a5073c52623c0bd3b6595ea
+ba_track_id: a71986bcb55b7108b979f7eebeaa7348
 # Google Analytics
 ga_track_id: UA-161451043-1
 
