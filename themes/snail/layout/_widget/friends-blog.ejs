@@ -1,0 +1,12 @@
+<!-- Friends Blog -->
+<% if(config.friends) { %>
+   <p class="sidebar-title">链接</p>
+   <div class="widget">
+        <ul>
+            <% config.friends.forEach(function(friend){ %>
+                 <li><a href="<%= friend.href %>" target="_blank"><%= friend.title %></a></li>
+            <% }); %>
+       </ul>
+   </div>
+   
+<% }%>

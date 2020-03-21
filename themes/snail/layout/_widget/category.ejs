@@ -1,0 +1,11 @@
+<!-- Categories -->
+<% if (site.categories.length) { %>
+    <p class="sidebar-title">分类</p>
+    <div class="widget">
+      <ul>
+        <% site.categories.map(function(category) { %>
+          <li><a href="categories/#<%= category.name %>"><%= category.name %></a></li>
+        <% }) %>
+      </ul>
+    </div>
+<% } %>

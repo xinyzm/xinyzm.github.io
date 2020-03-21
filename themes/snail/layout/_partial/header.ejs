@@ -1,0 +1,106 @@
+<!-- Modified by Yu-Hsuan Yen -->
+<!-- Post Header -->
+<style type="text/css">
+    header.intro-header{
+        <% if(config['color_theme'] == 'star'){ %>
+            <% if (is_home()) { %>
+                background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)), url('<%= config.root + config["header-img"] %>') 
+                /*config*/
+            <%} else if (is_post()){%>
+                background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)), url('<%= page["header-img"] %>')
+                /*post*/
+            <%} else {%>
+                background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)), url('<%= config.root + page["header-img"] %>')
+                /*page*/
+            <%} %>
+        <% }else if(config['color_theme'] == 'dark'){ %>
+            <% if (is_home()) { %>
+                background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)), url('<%= config.root + config["header-img"] %>') 
+                /*config*/
+            <%} else if (is_post()){%>
+                background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)), url('<%= page["header-img"] %>')
+                /*post*/
+            <%} else {%>
+                background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)), url('<%= config.root + page["header-img"] %>')
+                /*page*/
+            <%} %>
+        <% }else{ %>
+            <% if (is_home()) { %>
+                background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('<%= config.root + config["header-img"] %>') 
+                /*config*/
+            <%} else if (is_post()){%>
+                background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('<%= page["header-img"] %>')
+                /*post*/
+            <%} else {%>
+                background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('<%= config.root + page["header-img"] %>')
+                /*page*/
+            <%} %>
+        <% } %>
+    }
+    <% if (config.signature) {%>
+    #signature{
+        background-image: url('<%= config.root + config["signature-img"] %>');
+    }
+    <%}%>
+</style>
+
+<header class="intro-header" >
+    <!-- Signature -->
+    <div id="signature">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <% if (is_post()) { %>
+                    <div class="post-heading">
+                        <div class="tags">
+                            <% page.tags.forEach(function(tag){ %>
+                              <a class="tag" href="<%= config.root %>tags/#<%= tag.name %>" title="<%= tag.name %>"><%= tag.name %></a>
+                            <% }) %>
+                        </div>
+                        <h1><%= page.title %></h1>
+                        <h2 class="subheading"><%= page.subtitle || "" %></h2>
+                        <span class="meta">
+                            <%- page.author || config.author %> 
+			    <span class="unimportant">
+				发表于 <%= page.date.format(config.date_format) %>
+			    </span>
+                        </span>
+
+                        <% if(config['visitor']['enable']) { %>
+                            <div class="blank_box"></div>
+			    <div class="blank_box"></div>
+                            <span class="meta">
+			    	<i title="文章字数" class="fa fa-file-word-o"></i>
+				<span class="post-count"><%= wordcount(page.content) %></span>
+				<span class="divide-line">｜</span>
+			    	<i title="预计阅读时间" class="fa fa-clock-o"></i>
+				<span class="post-count"><%= min2read(page.content) %> min</span>
+				<span class="divide-line">｜</span>
+				<i title="文章访问量" class="fa fa-eye"></i>
+                                <!-- 不蒜子统计 start -->
+				<span id="busuanzi_value_page_pv"><i class="fa fa-spinner fa-spin"></i></span>
+				<!-- 不蒜子统计 end -->
+                            </span>
+                        <% } %>
+
+                    </div>
+                <% } else { %>
+                    <div class="site-heading">
+                        <h1><%= page.title || config.title %></h1>
+                        <!--<hr class="small">-->
+                        <span id="subdusi" class="subheading"><%= page.description || config.subtitle || "" %></span>
+                    </div>
+                <% } %>
+
+                </div>
+            </div>
+        </div>      
+    </div>
+
+    <% if(config['bg_effects']['enable'] && config['bg_effects']['wave']['enable'] && (config['color_theme'] != 'star')){ %>
+    <div class="waveWrapper">
+        <div class="wave wave_before" style="background-image: url('/img/wave-<%= config.color_theme %>.png')"></div>
+        <div class="wave wave_after" style="background-image: url('/img/wave-<%= config.color_theme %>.png')"></div>
+    </div>
+    <% } %>
+</header>
