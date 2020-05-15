@@ -1,0 +1,40 @@
+.poem {
+	padding: 0px;
+	display: flex;
+	display: -webkit-flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	color: #fff;
+}
+
+.poem h2 {
+	margin: 20px 0;
+}
+
+.poem p {
+	margin: 5px 0;
+}
+
+.poem hr {
+    border: none;
+    height: 2px;
+	width: 25%;
+	margin: 30px 0;
+}
+
+@media only screen and (max-width: 768px) {
+	.poem h2 {
+		margin: 10px 0;
+		font-size: 21px;
+	}
+
+	.poem p {
+		font-size: 14px;
+	}
+
+	.poem hr {
+		width: 50%;
+		margin: 20px 0;
+	}
+}

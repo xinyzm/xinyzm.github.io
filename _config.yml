@@ -75,7 +75,7 @@ theme: snail
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repo: https://github.com/xinyzm/xinyzm.github.io.git
+  repo: git@github.com:xinyzm/xinyzm.github.io.git
   branch: master
 
 #######################################   Custom Setting Start   #######################################
