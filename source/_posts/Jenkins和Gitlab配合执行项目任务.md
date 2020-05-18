@@ -7,7 +7,7 @@ date: 2020-05-13 11:00:00
 subtitle: 
 header-img: snail-bg.jpg
 tags:
-- jenkins
+- Jenkins
 categories:
 - 运维
 ---
