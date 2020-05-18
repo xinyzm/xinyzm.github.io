@@ -124,7 +124,7 @@
 			    <div class="blank_box"></div>
                             <span class="meta">
 			    	<i title="文章字数" class="fa fa-file-word-o"></i>
-				<span class="post-count">603</span>
+				<span class="post-count">600</span>
 				<span class="divide-line">｜</span>
 			    	<i title="预计阅读时间" class="fa fa-clock-o"></i>
 				<span class="post-count">2 min</span>
@@ -189,15 +189,15 @@
 
 			    
 
-                        
-
-			    
-
 			        <li>
                                     <a href="/categories/">分类</a>
                                 </li>  
 
                             
+
+                        
+
+			    
 
                         
 
@@ -231,15 +231,15 @@
 
 			    
 
-                        
-
-			    
-
 			        <li>
                                     <a href="/archive/">归档</a>
                                 </li>  
 
                             
+
+                        
+
+			    
 
                         
 
@@ -299,15 +299,15 @@
 
 			    
 
+                        
+
+			    
+
 			        <li>
                                     <a href="/poems/">诗集</a>
                                 </li>  
 
                             
-
-                        
-
-			    
 
                         
 
@@ -325,15 +325,15 @@
 
 			    
 
+                        
+
+			    
+
 			        <li>
                                     <a href="/about/">关于</a>
                                 </li>  
 
                             
-
-                        
-
-			    
 
                         
 
@@ -428,7 +428,7 @@
                 col-md-10 col-md-offset-1
                 post-container">
 
-                <h3 id="1、安装-jdk1-8"><a href="#1、安装-jdk1-8" class="headerlink" title="1、安装  jdk1.8"></a>1、安装  jdk1.8</h3><p>（1）前往 <a href="https://www.oracle.com/java/technologies/javase/javase-jdk8-downloads.html" target="_blank" rel="noopener">Oracle 官网</a>，选择下载 <strong>xxx-linux-xxx.tar.gz</strong> 压缩包到本地（以 jdk-8u152-linux-x64.tar.gz 为例）</p>
+                <h3 id="安装-jdk1-8"><a href="#安装-jdk1-8" class="headerlink" title="安装  jdk1.8"></a>安装  jdk1.8</h3><p>（1）前往 <a href="https://www.oracle.com/java/technologies/javase/javase-jdk8-downloads.html" target="_blank" rel="noopener">Oracle 官网</a>，选择下载 <strong>xxx-linux-xxx.tar.gz</strong> 压缩包到本地（以 jdk-8u152-linux-x64.tar.gz 为例）</p>
 <p>（2）使用 <strong><a href="https://filezilla-project.org/" target="_blank" rel="noopener">filezilla</a></strong> 将下载的 jdk 压缩包上传至 Linux 系统下（/home/java/jdk-8u152-linux-x64.tar.gz）</p>
 <p>（3）解压 jdk 到当前目录</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">tar -zxvf jdk-8u152-linux-x64.tar.gz</span><br></pre></td></tr></table></figure>
@@ -438,15 +438,15 @@
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">source /etc/profile</span><br></pre></td></tr></table></figure>
 <p>（6）查看 java 版本，验证是否安装成功</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">java -version</span><br></pre></td></tr></table></figure>
-<h3 id="2、安装-tomcat8-5"><a href="#2、安装-tomcat8-5" class="headerlink" title="2、安装  tomcat8.5"></a>2、安装  tomcat8.5</h3><p>（1）前往 <a href="https://tomcat.apache.org/download-80.cgi" target="_blank" rel="noopener">Apache Tomcat</a>，选择下载 <strong>Core - tar.gz</strong> 压缩包到本地（以 apache-tomcat-8.5.24.tar.gz 为例），如下图</p>
-<p><img src="【20200512】Centos安装jdk+tomcat+mysql/tomcat下载.png" alt="tomcat下载"></p>
+<h3 id="安装-tomcat8-5"><a href="#安装-tomcat8-5" class="headerlink" title="安装  tomcat8.5"></a>安装  tomcat8.5</h3><p>（1）前往 <a href="https://tomcat.apache.org/download-80.cgi" target="_blank" rel="noopener">Apache Tomcat</a>，选择下载 <strong>Core - tar.gz</strong> 压缩包到本地（以 apache-tomcat-8.5.24.tar.gz 为例），如下图</p>
+<p><img src="tomcat下载.png" alt="tomcat下载"></p>
 <p>（2）使用 <strong><a href="https://filezilla-project.org/" target="_blank" rel="noopener">filezilla</a></strong> 将下载的 tomcat 压缩包上传至 Linux 系统下（/home/tomcat/apache-tomcat-8.5.24.tar.gz）</p>
 <p>（3）解压 tomcat 到当前目录</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">tar -zxvf apache-tomcat-8.5.24.tar.gz</span><br></pre></td></tr></table></figure>
 <p>（4）启动和关闭 tomcat</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash"> 启动 tomcat</span></span><br><span class="line">./home/tomcat/apache-tomcat-8.5.24/bin/startup.sh</span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> 关闭 tomcat</span></span><br><span class="line">./home/tomcat/apache-tomcat-8.5.24/bin/shutdown.sh</span><br></pre></td></tr></table></figure>
-<h3 id="3、安装-mysql5-7"><a href="#3、安装-mysql5-7" class="headerlink" title="3、安装  mysql5.7"></a>3、安装  mysql5.7</h3><p>（1）前往 <a href="https://downloads.mysql.com/archives/community/" target="_blank" rel="noopener">MySQL官网</a>，选择如下图所示的 mysql 版本下载到本地（以 mysql-5.7.29-linux-glibc2.12-x86_64.tar.gz 为例）</p>
-<p><img src="【20200512】Centos安装jdk+tomcat+mysql/mysql下载.png" alt="mysql下载"></p>
+<h3 id="安装-mysql5-7"><a href="#安装-mysql5-7" class="headerlink" title="安装  mysql5.7"></a>安装  mysql5.7</h3><p>（1）前往 <a href="https://downloads.mysql.com/archives/community/" target="_blank" rel="noopener">MySQL官网</a>，选择如下图所示的 mysql 版本下载到本地（以 mysql-5.7.29-linux-glibc2.12-x86_64.tar.gz 为例）</p>
+<p><img src="mysql下载.png" alt="mysql下载"></p>
 <p>（2）使用 <strong><a href="https://filezilla-project.org/" target="_blank" rel="noopener">filezilla</a></strong> 将下载的 mysql 压缩包上传至 Linux 系统下（/home/mysql/mysql-5.7.29-linux-glibc2.12-x86_64.tar.gz）</p>
 <p>（3）解压 mysql 到 <strong>/usr/local/mysql</strong> 目录下</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">tar -zxvf mysql-5.7.29-linux-glibc2.12-x86_64.tar.gz -C /usr/local/mysql/</span><br></pre></td></tr></table></figure>
@@ -625,7 +625,7 @@
         <div id="toc" class="toc-article">
         <strong class="toc-title">Contents</strong>
         
-          <ol class="toc-nav"><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#1、安装-jdk1-8"><span class="toc-nav-number">1.</span> <span class="toc-nav-text">1、安装  jdk1.8</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#2、安装-tomcat8-5"><span class="toc-nav-number">2.</span> <span class="toc-nav-text">2、安装  tomcat8.5</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#3、安装-mysql5-7"><span class="toc-nav-number">3.</span> <span class="toc-nav-text">3、安装  mysql5.7</span></a></li></ol>
+          <ol class="toc-nav"><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#安装-jdk1-8"><span class="toc-nav-number">1.</span> <span class="toc-nav-text">安装  jdk1.8</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#安装-tomcat8-5"><span class="toc-nav-number">2.</span> <span class="toc-nav-text">安装  tomcat8.5</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#安装-mysql5-7"><span class="toc-nav-number">3.</span> <span class="toc-nav-text">安装  mysql5.7</span></a></li></ol>
         
         </div>
       </aside>
