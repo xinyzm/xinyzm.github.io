@@ -15,11 +15,11 @@
     <!--<link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>-->
     <title>
         
-          Hello World hexo - 信影子慕の世界
+          Jenkins 和 Gitlab 配合执行项目任务 jenkins gitlab - 信影子慕の世界
         
     </title>
 
-    <link rel="canonical" href="http://www.xinyzm.top/hello-world/">
+    <link rel="canonical" href="http://www.xinyzm.top/Jenkins-和-Gitlab-配合执行项目任务/">
 
     <!-- Bootstrap Core CSS -->
     
@@ -107,15 +107,15 @@
                     <div class="post-heading">
                         <div class="tags">
                             
-                              <a class="tag" href="/tags/#hexo-test" title="hexo-test">hexo-test</a>
+                              <a class="tag" href="/tags/#jenkins" title="jenkins">jenkins</a>
                             
                         </div>
-                        <h1>Hello World</h1>
-                        <h2 class="subheading">Hello hexo.</h2>
+                        <h1>Jenkins 和 Gitlab 配合执行项目任务</h1>
+                        <h2 class="subheading"></h2>
                         <span class="meta">
                             信影子慕 
 			    <span class="unimportant">
-				发表于 2020-03-20
+				发表于 2020-05-13
 			    </span>
                         </span>
 
@@ -124,7 +124,7 @@
 			    <div class="blank_box"></div>
                             <span class="meta">
 			    	<i title="文章字数" class="fa fa-file-word-o"></i>
-				<span class="post-count">73</span>
+				<span class="post-count">398</span>
 				<span class="divide-line">｜</span>
 			    	<i title="预计阅读时间" class="fa fa-clock-o"></i>
 				<span class="post-count">1 min</span>
@@ -189,10 +189,6 @@
 
 			    
 
-                        
-
-			    
-
 			        <li>
                                     <a href="/categories/">分类</a>
                                 </li>  
@@ -213,9 +209,17 @@
 
                         
 
+			    
+
+                        
+
 		    
 		        
 			
+
+			    
+
+                        
 
 			    
 
@@ -243,21 +247,9 @@
 
                         
 
-			    
-
-                        
-
 		    
 		        
 			
-
-			    
-
-                        
-
-			    
-
-                        
 
 			    
 
@@ -278,6 +270,14 @@
                                 </li>  
 
                             
+
+                        
+
+			    
+
+                        
+
+			    
 
                         
 
@@ -333,19 +333,19 @@
 
 			    
 
+                        
+
+			    
+
+                        
+
+			    
+
 			        <li>
                                     <a href="/about/">关于</a>
                                 </li>  
 
                             
-
-                        
-
-			    
-
-                        
-
-			    
 
                         
 
@@ -428,15 +428,31 @@
                 col-md-10 col-md-offset-1
                 post-container">
 
-                <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+                <h3 id="在-Gitlab-创建-git-项目"><a href="#在-Gitlab-创建-git-项目" class="headerlink" title="在 Gitlab 创建 git 项目"></a>在 Gitlab 创建 git 项目</h3><h3 id="使用-sshkey-命令创建一对-ssh-公私钥，用于-deploy"><a href="#使用-sshkey-命令创建一对-ssh-公私钥，用于-deploy" class="headerlink" title="使用 sshkey 命令创建一对 ssh 公私钥，用于 deploy"></a>使用 sshkey 命令创建一对 ssh 公私钥，用于 deploy</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen -t rsa -b 4096 -C &quot;youremail@xxx.com&quot; -f &quot;sshkey_filename&quot;</span><br></pre></td></tr></table></figure>
+<h3 id="在-Jenkins-中添加-ssh-私钥凭据"><a href="#在-Jenkins-中添加-ssh-私钥凭据" class="headerlink" title="在 Jenkins 中添加 ssh 私钥凭据"></a>在 Jenkins 中添加 ssh 私钥凭据</h3><p>（1）选择凭据 - 系统 - 全局凭据 - 添加凭据</p>
+<p><img src="添加凭据-1.jpg" alt="添加凭据-1"></p>
+<p>（2）选择类型 <strong>SSH Username with private key</strong>，填写用户名和 ssh 私钥，如果生成公私钥的时候设置了 passphrase 就填写，否则不填</p>
+<p><img src="填写凭证-2.jpg" alt="填写凭证-2"></p>
+<h3 id="在-Gitlab-中配置-Deploy-Keys（添加-ssh-公钥）"><a href="#在-Gitlab-中配置-Deploy-Keys（添加-ssh-公钥）" class="headerlink" title="在 Gitlab 中配置 Deploy Keys（添加 ssh 公钥）"></a>在 Gitlab 中配置 Deploy Keys（添加 ssh 公钥）</h3><p>（1） 此步骤的前提是你拥有这个 git 项目的管理权限</p>
+<p>（2） 选择 git 项目 - 设置 - 仓库 - Deploy Keys ，填写 ssh 公钥，保存</p>
+<p><img src="配置deploy keys.jpg" alt="配置deploy keys"></p>
+<p>（3）激活新增的 deploy key </p>
+<p><img src="激活deploy key.jpg" alt="激活deploy key"></p>
+<h3 id="在-Jenkins-中新建任务"><a href="#在-Jenkins-中新建任务" class="headerlink" title="在 Jenkins 中新建任务"></a>在 Jenkins 中新建任务</h3><h3 id="配置任务-源码管理"><a href="#配置任务-源码管理" class="headerlink" title="配置任务 - 源码管理"></a>配置任务 - 源码管理</h3><p>（1） 选择 Git</p>
+<p>（2） 设置仓库地址，仓库地址从 Gitlab 中获取</p>
+<p>（3） 凭据选择你刚才使用 ssh 私钥添加的凭据</p>
+<p>（4） 指定分支，建议设置成 master</p>
+<p>（5） 如果需要部署的项目目录不是根目录，通过 Additional Behaviours -&gt; Sparse Checkout paths（安装 Git Parameter 插件） -&gt; Path 设置</p>
+<p><img src="配置任务-源码管理.jpg" alt="配置任务-源码管理"></p>
+<h3 id="配置任务-构建触发器"><a href="#配置任务-构建触发器" class="headerlink" title="配置任务 - 构建触发器"></a>配置任务 - 构建触发器</h3><p>（1）勾选 Build when a change is pushed to Gitlab.</p>
+<p>（2）查看 Jenkins 的 webhooks 的地址，点击高级按钮，生成 Secret token</p>
+<p><img src="获取webhooks地址.jpg" alt="获取webhooks地址"><img src="生成Secret token.jpg" alt="生成Secret token"></p>
+<p>（3） 选择 git 项目 - 设置 - 集成 ，填写 Webhooks 的 URL 和 Secret Token，取消勾选 Enable SSL verification</p>
+<p><img src="填写webhooks和token.jpg" alt="填写webhooks和token"></p>
+<h3 id="配置任务-构建"><a href="#配置任务-构建" class="headerlink" title="配置任务 - 构建"></a>配置任务 - 构建</h3><p>（1） 增加构建步骤 - 执行 shell </p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">echo 'Hello World!'</span><br></pre></td></tr></table></figure>
+<h3 id="在-Gitlab-进行测试"><a href="#在-Gitlab-进行测试" class="headerlink" title="在 Gitlab 进行测试"></a>在 Gitlab 进行测试</h3><p>（1）选择 git 项目 - 设置 - 集成，在新创建的 Webhooks 下，点击 Test，选择 Push events</p>
+<p>（2） 在 Jenkins 中查看新创建的任务是否正确执行并打印 <strong>Hello World!</strong></p>
 
                 
                 <hr>
@@ -554,7 +570,7 @@
 
 		<script>
 		const gitment = new Gitment({
-		    id: 'Fri Mar 20 2020 17:11:12 GMT+0800', // optional
+		    id: 'Wed May 13 2020 11:00:00 GMT+0800', // optional
 		    owner: 'xinyzm',
 		    repo: 'xinyzm.github.io',
 		    oauth: {
@@ -590,7 +606,7 @@
         <div id="toc" class="toc-article">
         <strong class="toc-title">Contents</strong>
         
-          <ol class="toc-nav"><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#Quick-Start"><span class="toc-nav-number">1.</span> <span class="toc-nav-text">Quick Start</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#Create-a-new-post"><span class="toc-nav-number">1.1.</span> <span class="toc-nav-text">Create a new post</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#Run-server"><span class="toc-nav-number">1.2.</span> <span class="toc-nav-text">Run server</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#Generate-static-files"><span class="toc-nav-number">1.3.</span> <span class="toc-nav-text">Generate static files</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#Deploy-to-remote-sites"><span class="toc-nav-number">1.4.</span> <span class="toc-nav-text">Deploy to remote sites</span></a></li></ol></li></ol>
+          <ol class="toc-nav"><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#在-Gitlab-创建-git-项目"><span class="toc-nav-number">1.</span> <span class="toc-nav-text">在 Gitlab 创建 git 项目</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#使用-sshkey-命令创建一对-ssh-公私钥，用于-deploy"><span class="toc-nav-number">2.</span> <span class="toc-nav-text">使用 sshkey 命令创建一对 ssh 公私钥，用于 deploy</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#在-Jenkins-中添加-ssh-私钥凭据"><span class="toc-nav-number">3.</span> <span class="toc-nav-text">在 Jenkins 中添加 ssh 私钥凭据</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#在-Gitlab-中配置-Deploy-Keys（添加-ssh-公钥）"><span class="toc-nav-number">4.</span> <span class="toc-nav-text">在 Gitlab 中配置 Deploy Keys（添加 ssh 公钥）</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#在-Jenkins-中新建任务"><span class="toc-nav-number">5.</span> <span class="toc-nav-text">在 Jenkins 中新建任务</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#配置任务-源码管理"><span class="toc-nav-number">6.</span> <span class="toc-nav-text">配置任务 - 源码管理</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#配置任务-构建触发器"><span class="toc-nav-number">7.</span> <span class="toc-nav-text">配置任务 - 构建触发器</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#配置任务-构建"><span class="toc-nav-number">8.</span> <span class="toc-nav-text">配置任务 - 构建</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#在-Gitlab-进行测试"><span class="toc-nav-number">9.</span> <span class="toc-nav-text">在 Gitlab 进行测试</span></a></li></ol>
         
         </div>
       </aside>
@@ -610,7 +626,7 @@
                     <h5><a href="/tags/">标签</a></h5>
                     <div class="tags">
                        
-                          <a class="tag" href="/tags/#hexo-test" title="hexo-test">hexo-test</a>
+                          <a class="tag" href="/tags/#jenkins" title="jenkins">jenkins</a>
                         
                     </div>
                 </section>
