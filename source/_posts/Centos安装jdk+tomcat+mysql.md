@@ -1,5 +1,5 @@
 ---
-title: Centos 安装 jdk+tomcat+mysql
+title: CentOS 安装 jdk+tomcat+mysql
 keywords: jdk tomcat mysql
 catalog: true
 comments: true
